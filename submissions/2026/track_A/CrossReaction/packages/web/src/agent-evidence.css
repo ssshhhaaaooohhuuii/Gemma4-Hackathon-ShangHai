@@ -1,0 +1,240 @@
+.agent-evidence {
+  display: grid;
+  gap: 16px;
+}
+
+.agent-evidence h3 {
+  margin: 0 0 9px;
+  color: #21303a;
+  font-size: 0.95rem;
+}
+
+.agent-mode-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: #60707a;
+  font-size: 0.86rem;
+}
+
+.agent-mode {
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.agent-mode-native_tool_calling,
+.agent-mode-native_guided_tool_calling {
+  color: #0b5d3d;
+  background: #dff4ea;
+}
+
+.agent-mode-guided_tool_calling {
+  color: #25515c;
+  background: #e9f2f3;
+}
+
+.agent-mode-json_fallback {
+  color: #6d4f00;
+  background: #fff3cf;
+}
+
+.agent-memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.agent-memory-grid div {
+  min-width: 0;
+  border: 1px solid #dfe8eb;
+  border-radius: 6px;
+  padding: 9px;
+  background: #fbfcfc;
+}
+
+.agent-memory-grid strong,
+.agent-memory-grid span {
+  display: block;
+}
+
+.agent-memory-grid strong {
+  margin-bottom: 4px;
+  color: #52626b;
+  font-size: 0.76rem;
+}
+
+.agent-memory-grid span {
+  color: #1f3039;
+  font-size: 0.86rem;
+  overflow-wrap: anywhere;
+}
+
+.agent-memory-detail {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.agent-memory-detail > div {
+  min-width: 0;
+  border: 1px solid #dfe8eb;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fbfcfc;
+}
+
+.agent-memory-detail strong {
+  display: block;
+  color: #1f3039;
+  font-size: 0.84rem;
+}
+
+.agent-compact-list {
+  display: grid;
+  gap: 5px;
+  margin: 9px 0 0;
+  padding-left: 18px;
+  color: #56666f;
+  font-size: 0.84rem;
+}
+
+.agent-id-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 9px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.agent-id-list li {
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #d8e2e6;
+  border-radius: 999px;
+  padding: 3px 8px;
+  color: #4f5f68;
+  background: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-tool-list,
+.agent-trace-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.agent-tool,
+.agent-trace-list li {
+  min-width: 0;
+  border: 1px solid #dfe8eb;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fbfcfc;
+}
+
+.agent-tool > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.agent-tool .status {
+  margin-left: 0;
+}
+
+.agent-tool strong {
+  color: #1f3039;
+}
+
+.agent-tool > small {
+  display: block;
+  margin-top: 5px;
+  color: #74838a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+}
+
+.tool-origin {
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.tool-origin-model_native {
+  color: #0b5d3d;
+  background: #dff4ea;
+}
+
+.tool-origin-model_schema {
+  color: #25515c;
+  background: #e9f2f3;
+}
+
+.tool-origin-system_grounding {
+  color: #4b5b63;
+  background: #edf1f2;
+}
+
+.tool-origin-json_fallback {
+  color: #6d4f00;
+  background: #fff3cf;
+}
+
+.agent-tool pre {
+  max-height: 180px;
+  margin: 8px 0 0;
+  overflow: auto;
+  border: 1px solid #e1e9ec;
+  border-radius: 6px;
+  padding: 8px;
+  color: #26343d;
+  background: #ffffff;
+  font-size: 0.78rem;
+  white-space: pre-wrap;
+}
+
+.agent-tool p,
+.agent-trace-list p {
+  margin: 7px 0 0;
+  color: #60707a;
+  font-size: 0.84rem;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+.agent-trace-list span {
+  display: inline-flex;
+  margin-bottom: 5px;
+  border-radius: 999px;
+  padding: 2px 7px;
+  color: #25515c;
+  background: #e9f2f3;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.agent-trace-list strong {
+  display: block;
+  color: #1f3039;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 920px) {
+  .agent-memory-grid {
+    grid-template-columns: 1fr;
+  }
+}

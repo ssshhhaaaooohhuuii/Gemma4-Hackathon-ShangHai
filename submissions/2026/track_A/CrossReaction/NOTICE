@@ -1,0 +1,23 @@
+CrossReaction Gemma 4 Bioinformatics Demo
+Copyright 2026 LIANG Weiyin
+Project website: https://crossreaction.com
+
+This repository is released under the GNU General Public License
+version 3 only (GPL-3.0-only). See LICENSE for the full license text.
+
+The CrossReaction name, marks, logos, product identity, and related
+brand assets are not licensed for trademark use except as required for
+reasonable attribution and identification of this repository.
+
+CrossReaction and crossreaction.com are project brand identifiers operated
+by LIANG Weiyin for this public review project.
+
+This repository does not include or license any private CrossReaction
+platform internals, proprietary architecture, production services,
+private container images, private datasets, customer data, credentials,
+deployment secrets, or unpublished commercial materials that are not present in this
+repository.
+
+The included sample datasets are synthetic and intentionally small. They
+exist only to make the public review project reproducible and are not
+intended for scientific claims.

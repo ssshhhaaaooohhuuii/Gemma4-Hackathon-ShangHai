@@ -1,0 +1,5 @@
+sample_id,condition,fastq
+control_1,control,samples/control_1.fastq
+control_2,control,samples/control_2.fastq
+treatment_1,treatment,samples/treatment_1.fastq
+treatment_2,treatment,samples/treatment_2.fastq

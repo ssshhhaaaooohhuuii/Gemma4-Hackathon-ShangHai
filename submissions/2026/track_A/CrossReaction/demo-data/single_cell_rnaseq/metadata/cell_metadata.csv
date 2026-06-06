@@ -1,0 +1,7 @@
+cell_id,sample,condition,expected_cell_type
+CTRL_AAAC,control_1,control,T_cell
+CTRL_GGTT,control_1,control,B_cell
+CTRL_CCAA,control_2,control,Myeloid
+TRT_TTGG,treatment_1,treatment,T_cell
+TRT_ACGT,treatment_1,treatment,Activated_T_cell
+TRT_GTCA,treatment_2,treatment,Myeloid

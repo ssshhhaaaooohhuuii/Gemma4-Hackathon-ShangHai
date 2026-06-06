@@ -1,0 +1,17 @@
+{
+  "name": "gemma-bulk-rnaseq-review-demo",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "description": "A review-safe Gemma 4 bulk RNA-seq demo with a lightweight web UI and OpenAI-compatible local model integration.",
+  "scripts": {
+    "dev": "concurrently -n llm,api,web -c blue,green,magenta \"pnpm --filter @gemma-demo/llm-engine dev\" \"pnpm --filter @gemma-demo/api dev\" \"pnpm --filter @gemma-demo/web dev\"",
+    "build": "pnpm --filter @gemma-demo/api build && pnpm --filter @gemma-demo/web build",
+    "test": "pnpm --filter @gemma-demo/api test",
+    "check": "pnpm build && pnpm test && bash scripts/package-submission.sh && cd .review-data/submission/CrossReaction-Gemma4-Agent && bash scripts/check-review-package.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "packageManager": "pnpm@8.15.9"
+}

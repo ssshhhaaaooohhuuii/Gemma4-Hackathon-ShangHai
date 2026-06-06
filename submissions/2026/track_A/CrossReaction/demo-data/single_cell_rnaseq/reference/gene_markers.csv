@@ -1,0 +1,7 @@
+gene,marker_for,interpretation
+CD3D,T_cell,T cell lineage marker
+MS4A1,B_cell,B cell lineage marker
+LYZ,Myeloid,Myeloid lineage marker
+IFNG,Activated_T_cell,Treatment-associated activation marker
+MKI67,Proliferation,Cell-cycle and proliferation marker
+GAPDH,Housekeeping,Housekeeping control

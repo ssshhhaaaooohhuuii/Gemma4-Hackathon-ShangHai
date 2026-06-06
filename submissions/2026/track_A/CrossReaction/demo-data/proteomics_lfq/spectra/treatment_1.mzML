@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mzML>
+  <run id="treatment_1">
+    <spectrum id="scan=1"><cvParam name="base peak intensity" value="3150"/></spectrum>
+    <spectrum id="scan=2"><cvParam name="total ion current" value="22600"/></spectrum>
+  </run>
+</mzML>
